@@ -305,7 +305,7 @@ validationWithCor <- function(vect1, vect2) {
 #' @param estimator Funzione di stima della difficolta' o abilita' della tabella generata
 #' @param validator Funzione per fornire un indicatore della bonta' dello stimatore
 #' @param increaseTable Funzione opzionale di incremento della tabella su cui applicare lo stimatore
-#' @param valid Indica se il validatore deve essere applicato sulla difficolta' o l'abilita'
+#' @param diffOrAb Indica se il validatore deve essere applicato sulla difficolta' o l'abilita'
 #' @return Lista contenente la tabella generata, le difficolta' o abilita' stimate e output del validatore 
 #' @examples
 #' numItems <- 10
