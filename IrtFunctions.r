@@ -276,27 +276,6 @@ validationWithPlot <- function(vect1, vect2, label1 = "Vettore 1", label2 = "Vet
     NULL
 }
 
-#' Valuta la bonta' del mio stimatore calcolando il coefficiente di correlazione lineare
-#'
-#' @param vect1 vettore di difficolta' o abilita'
-#' @param vect2 vettore di difficolta' o abilita'
-#' @return Valore numerico compreso tra -1 e 1: se si avvicina a -1 i dati sono correlati negativamente, se si avvicina ad 1 
-#' i dati sono correlati positivamente e se e' un valore vicino a 0 allora non vi e' alcun tipo di correlazione lineare
-#' @examples
-#' numItems <- 10
-#' numStudents <- 30
-#' bootStrapVal <- 10
-#' diffInit <- rnorm(numItems)
-#' abil <- rnorm(numStudents)
-#' genDic <- generateDichot(diff, abil)
-#' genDicBoot <- bootstrapping(genDic, numStudents * bootStrapVal)
-#' diffEstim <- estimateDifficultiesDichotFreeDiscrim(genDicBoot)
-#' validationWithCor(diffInit, diffEstim)
-validationWithCor <- function(vect1, vect2) {
-    cor(vect1, vect2)
-}
-
-
 #' Funzione che permette di generare, stimare, validare e, se richiesto, estendere la tabella generata dagli input
 #'
 #' @param diff Vettore di difficolta'
